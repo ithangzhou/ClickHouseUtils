@@ -1,0 +1,56 @@
+{
+  "job": {
+     "setting": {
+         "speed": {
+            "channel": 1
+         }
+     },
+     "content": [
+         {
+            "reader": {
+              "name": "mysqlreader",
+              "parameter": {
+                 "column": [
+                     "ifnull(id,0)"
+                 ],
+                 "connection": [
+                     {
+                        "jdbcUrl": [
+                          ""
+                        ],
+                        "table": [
+                          ""
+                        ]
+                     }
+                 ],
+                 "password": "",
+                 "splitPk": "",
+                 "username": ""
+              }
+            },
+            "writer": {
+              "name": "rdbmswriter",
+         "parameter": {
+                 "connection": [
+                     {
+                        "jdbcUrl": "",
+                        "table": [
+                          ""
+                        ]
+                     }
+                 ],
+                 "username": "",
+                 "password": "",
+                 "table": "",
+                 "column": [
+                     "id"
+                 ],
+                 "preSql": [
+                     ""
+                 ]
+              }
+            }
+         }
+     ]
+  }
+}

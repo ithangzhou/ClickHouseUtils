@@ -1,0 +1,33 @@
+[
+  {
+    "mysql": {
+      "db_host": "192.168.3.36",
+      "db_port": 3309,
+      "db_name": "cic_lis",
+      "db_user": "etluser",
+      "db_passwd": "yto_wrynvFV",
+      "table": [
+        "report_detail",
+        "report_info",
+        "apply_info",
+        "collect_info"
+      ]
+    },
+    "clickhouse": {
+      "db_host": "192.168.87.166",
+      "db_port": 8123,
+      "db_name": "jwy_ods",
+      "db_user": "datax",
+      "db_passwd": "datax_166",
+      "datax_conf": true,
+      "sql_etl" : true,
+      "exec_ddl": true,
+      "table": [
+        "cic_lis_report_detail",
+        "cic_lis_report_info",
+        "cic_lis_apply_info",
+        "cic_lis_collect_info"
+      ]
+    }
+  }
+]
